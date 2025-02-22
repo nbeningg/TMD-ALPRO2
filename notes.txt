@@ -1,0 +1,119 @@
+PERINTAH BERHASIL
+=================
+I N P U T 
+INPUT tProyek P008 Fun_with_Science SMAN_2_BANDUNG 15-06-2024;
+INPUT tTim T009 SainsPioneers 6-Anggota P008;
+
+U P D A T E
+UPDATE tProyek P005 Kreativitas_Digital SMPN_10_BANDUNG 15-06-2024;
+UPDATE tTim T008 EduChampions 3-Anggota P007;
+
+D E L E T E
+DELETE tProyek P011;
+DELETE tTim T012;
+
+S H O W
+SHOW tProyek;
+SHOW tTim;
+SHOW tProyek tTim;
+SHOW tTim tProyek;
+
+
+PERINTAH SALAH
+==============
+I N P U T
+perintah salah untuk input jika kelebihan kata atau kurang
+----------------------------------------------------------
+INPUT tProyek P011 Teknologi_Ramah_Anak Asik SMAN_5_BANDUNG 17-06-2024;
+INPUT tTim VisionVanguards 10-Anggota P008;
+
+perintah salah untuk input jika id sudah ada 
+---------------------------------------------
+INPUT tProyek P010 Teknologi_Ramah_Anak SMAN_5_BANDUNG 17-06-2024;
+INPUT tTim T010 VisionVanguards 10-Anggota P008;
+
+perintah salah untuk input tim jika foreign key tidak ada
+---------------------------------------------------------
+INPUT tTim T012 VisionVanguards 10-Anggota P0012;
+
+perintah salah untuk input jika bukan tTim atau tProyek
+-------------------------------------------------------
+INPUT tProwyek P010 Teknologi_Ramah_Anak SMAN_5_BANDUNG 17-06-2024;
+
+U P D A T E
+perintah salah untuk update jika kelebihan kata atau kurang
+-----------------------------------------------------------
+UPDATE tProyek P011 Teknologi_Ramah_Anak Asik SMAN_5_BANDUNG 17-06-2024;
+UPDATE tTim VisionVanguards 10-Anggota P008;
+
+perintah salah untuk update jika id tidak ada
+----------------------------------------------
+UPDATE tProyek P012 Teknologi_Ramah_Anak SMAN_5_BANDUNG 17-06-2024;
+UPDATE tTim T012 VisionVanguards 10-Anggota P008;
+
+perintah salah untuk update tim jika foreign key tidak ada
+----------------------------------------------------------
+UPDATE tTim T010 VisionVanguards 10-Anggota P0012;
+
+perintah salah untuk update jika bukan tTim atau tProyek
+---------------------------------------------------------
+UPDATE tTwim P010 Teknologi_Ramah_Anak SMAN_5_BANDUNG 17-06-2024;
+
+D E L E T E 
+perintah salah untuk delete jika kelebihan kata atau kurang
+-----------------------------------------------------------
+DELETE tProyek P009 P010;
+DELETE tTim;
+
+perintah salah untuk delete jika id tidak ada
+---------------------------------------------
+DELETE tProyek P012;
+DELETE tTim T012;
+
+perintah salah untuk delete jika foreign key sedang digunakan
+-------------------------------------------------------------
+DELETE tProyek P001;
+
+perintahh salah untuk delete jika bukan tTim atau tProyek
+---------------------------------------------------------
+DELETE tProwyek P0010
+
+S H O W 
+perintah salah jika bukan ke tabel proyek/tim untuk single
+----------------------------------------------------------
+SHOW tTwim;
+
+perintah salah jika bukan ke tabel proyek/tim untuk join
+---------------------------------------------------------
+SHOW tTim tProwyek;
+
+printah salah untuk show jika join ke tabel sendiri
+---------------------------------------------------
+SHOW tProyek tTim;
+
+SEMUA PERINTAH
+perintah salah untuk semua perintah jika kurang ;
+-------------------------------------------------
+SHOW tProyek
+
+perintah salah untuk semua perintah jika bukan INPUT/UPDATE/DELETE/SHOW
+DELETO tProyek P012;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
